@@ -6,30 +6,19 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav mr-auto nav-pills">
-                <ul class="navbar-nav mr-auto nav nav-pills">
-                    {% if page.active == "home" %}
-                    <li class="nav-item active"><a href="#">Home</a></li>
-                    {% else %}
-                    <li><a href="/">Home</a></li>
-                    {% endif %}
-                    {% if page.active == "about" %}
-                    <li class="nav item active"><a href="#">About</a></li>
-                    {% else %}
-                    <li><a href="../about/">About</a></li>
-                    {% endif %}
-                    {% if page.active == "services" %}
-                    <li class="nav item active"><a href="#">Services</a></li>
-                    {% else %}
-
-                    {% else %}
-                    <li><a href="../about">About</a></li>
-                    {% endif %}
-                </ul>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">{{ pa}}</a>
-                </li>
-                <li class="nav-item dropdown">
+            <ul class="navbar-nav mr-auto nav nav-pills">
+                {% if page.active == "home" %}
+                <li class="nav-item active"><a href="#">Home</a></li>
+                {% else %}
+                <li><a href="/">Home</a></li>
+                {% endif %}
+                {% if page.active == "about" %}
+                <li class="nav item active"><a href="#">About</a></li>
+                {% else %}
+                <li><a href="#">About</a></li>
+                {% endif %}
+                {% if page.active == "services" %}
+                <li class="nav item active dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="#">Weddings</a>
@@ -40,14 +29,29 @@
                         <a class="dropdown-item" href="#">Payment Information</a>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
+                {% else %}
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Weddings</a>
+                        <a class="dropdown-item" href="#">Corporate/Headshot</a>
+                        <a class="dropdown-item" href="#">Prom</a>
+                        <a class="dropdown-item" href="#">A la carte</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Payment Information</a>
+                    </div>
+                {% end if %}
+                {% if page.active == "Gallery" %}
+                <li class="nav item active"><a href="#">Gallery</a></li>
+                {% else %}
+                <li><a href="#">Gallery</a></li>
+                {% endif %}
+                {% if page.active == "Contact" %}
+                <li class="nav item active"><a href="#">Contact</a></li>
+                {% else %}
+                <li><a href="#">Contact</a></li>
+                {% endif %}
             </ul>
         </div>
     </nav>
 </header>
-
