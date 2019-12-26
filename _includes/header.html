@@ -1,7 +1,8 @@
 <header>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="{{ site.url }}/">{{ site.name }}</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -19,31 +20,48 @@
                 {% endif %}
                 {% if page.active == "services" %}
                 <li class="nav item active dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
-                    <div class="dropdown-menu">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                       aria-haspopup="true" aria-expanded="false">Services</a>
+                    <div class="dropdown-submenu">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                           aria-expanded="false">By Event Type</a>
                         <a class="dropdown-item" href="#">Weddings</a>
-                        <a class="dropdown-item" href="#">Corporate/Headshot</a>
+                        <a class="dropdown-item" href="#">Corporate & Headshot</a>
                         <a class="dropdown-item" href="#">Prom</a>
-                        <a class="dropdown-item" href="#">A la carte</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Payment Information</a>
+                        <a class="dropdown-item" href="#">Special Event/Other</a>
+                    </div>
+                    <div class="dropdown-submenu">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                           aria-expanded="false">By Service/Package</a>
+                        <a class="dropdown-item" href="#">Bridal</a>
+                        <a class="dropdown-item" href="#">Full Face</a>
+                        <a class="dropdown-item" href="#">Eyes Only</a>
                     </div>
                 </li>
                 {% else %}
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
-                    <div class="dropdown-menu">
+                <li class="nav item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                   aria-expanded="false">Services</a>
+                    <div class="dropdown-submenu">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                           aria-expanded="false">By Event Type</a>
                         <a class="dropdown-item" href="#">Weddings</a>
-                        <a class="dropdown-item" href="#">Corporate/Headshot</a>
+                        <a class="dropdown-item" href="#">Corporate & Headshot</a>
                         <a class="dropdown-item" href="#">Prom</a>
-                        <a class="dropdown-item" href="#">A la carte</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Payment Information</a>
+                        <a class="dropdown-item" href="#">Special Event/Other</a>
+                    </div>
+                    <div class="dropdown-submenu">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                           aria-expanded="false">By Service/Package</a>
+                        <a class="dropdown-item" href="#">Bridal</a>
+                        <a class="dropdown-item" href="#">Full Face</a>
+                        <a class="dropdown-item" href="#">Eyes Only</a>
                     </div>
                 {% end if %}
                 {% if page.active == "gallery" %}
                 <li class="nav item active dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Gallery</a>
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                       aria-haspopup="true" aria-expanded="false">Gallery</a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="#">My Makeup Artistry</a>
                         <a class="dropdown-item" href="#">My Portable Studio</a>
@@ -51,7 +69,8 @@
                 </li>
                 {% else %}
                 <li class="nav item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Gallery</a>
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                       aria-haspopup="true" aria-expanded="false">Gallery</a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="#">My Makeup Artistry</a>
                         <a class="dropdown-item" href="#">My Portable Studio</a>
