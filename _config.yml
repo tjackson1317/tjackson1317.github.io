@@ -1,8 +1,7 @@
 name: "Taylor Lindsey Jackson"
 description: "Makeup Artist"
 
-url: '' 
-baseurl: ''
+url: 'https://makeup.taylorlindseyjackson.com'
 
 markdown: kramdown
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
